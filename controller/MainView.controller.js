@@ -1,0 +1,1 @@
+sap.ui.define(["com/te/teProjects/controller/BaseController"],function(e){"use strict";return e.extend("com.te.teProjects.controller.MainView",{})});

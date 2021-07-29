@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","sap/ui/model/json/JSONModel"],function(t,e){"use strict";return t.extend("com.te.teProjects.controller.covid.List",{dataPath:"https://api.rootnet.in/covid19-in/stats/Latest",onInit:function(){var t=new e(this.dataPath);this.getView().setModel(t,"Latest")}})});

@@ -1,0 +1,10 @@
+ <mvc:View controllerName="com.te.teProjects.controller.MainView"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc">
+  <Shell id="_IDGenShell1">
+    <App id="idAppControl" >
+      
+    </App>
+  </Shell>
+</mvc:View>

@@ -1,0 +1,38 @@
+<mvc:View 
+    xmlns:cssgrid="sap.ui.layout.cssgrid" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m"
+    controllerName="com.te.teProjects.controller.countdown.Countdown">
+    <Page id="countdown" showHeader="false">
+        <cssgrid:CSSGrid 
+            id="grid1"
+            gridTemplateColumns="1fr"
+            gridGap="1rem">
+            <Image id="_IDGenImage1" src="https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg"/>
+            <cssgrid:CSSGrid id="_IDGenCSSGrid1" gridTemplateColumns="1fr 1fr 1fr 1fr">
+                <GenericTile id="_IDGenGenericTile1" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Days">
+                    <TileContent id="_IDGenTileContent1">
+                        <NumericContent id="_IDGenNumericContent1" value="{timer>/nDays}" withMargin="false" valueColor="Critical"/>
+                    </TileContent>
+                </GenericTile>
+            
+                <GenericTile id="_IDGenGenericTile2" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Hours">
+                    <TileContent id="_IDGenTileContent2">
+                        <NumericContent id="_IDGenNumericContent2" value="{timer>/nHours}" withMargin="false" valueColor="Error"/>
+                    </TileContent>
+                </GenericTile>
+                <GenericTile id="_IDGenGenericTile3" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Minutes">
+                    <TileContent id="_IDGenTileContent3">
+                        <NumericContent id="_IDGenNumericContent3" value="{timer>/nMinutes}" withMargin="false" valueColor="Good"/>
+                    </TileContent>
+                </GenericTile>
+            
+                <GenericTile id="_IDGenGenericTile4" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Seconds">
+                    <TileContent id="_IDGenTileContent4">
+                        <NumericContent id="_IDGenNumericContent4" value="{timer>/nSeconds}" withMargin="false" />
+                    </TileContent>
+                </GenericTile>
+            </cssgrid:CSSGrid>
+        </cssgrid:CSSGrid>
+    </Page>
+</mvc:View>

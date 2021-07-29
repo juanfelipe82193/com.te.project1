@@ -1,0 +1,19 @@
+<mvc:View
+    controllerName="com.te.teProjects.controller.covid.List"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc" 
+    height="100%">
+    <Page id="list" showHeader="false">
+        <List id="_IDGenList1" 
+            headerText="Total Cases: {Latest>/data/summary/total}"
+            items="{Latest>/data/regional}"
+            footerText="Latest Covid Count">
+            <items>
+                <StandardListItem id="_IDGenStandardListItem1" 
+                    title="{Latest>loc}"
+                    description="Total Cases: {Latest>totalConfirmed}"
+                    info="Deaths: {Latest>deaths}"/>
+            </items>
+        </List>
+    </Page>
+</mvc:View>

@@ -1,0 +1,69 @@
+[
+    {
+        "title": "SAP Teched 2021 countdown",
+        "subheader": "Stacked Tiles",
+        "route": "first",
+        "icon": "sap-icon://accelerated"
+    },
+    {
+        "title": "Covid 19",
+        "subheader": "SAPUI5 Charts",
+        "route": "second",
+        "icon": "sap-icon://line-chart"
+    },
+    {
+        "title": "Vaccination Tracker",
+        "subheader": "SAPUI5 Calendar",
+        "route": "third",
+        "icon": "sap-icon://check-availability"
+    },
+    {
+        "title": "Pollution Tracker",
+        "subheader": "SAPUI5 Split Screen",
+        "route": "EXT-fourth",
+        "url": "http://localhost:8081/index.html",
+        "icon": "sap-icon://group-2"
+    },
+    {
+        "title": "My Portfolio",
+        "subheader": "SAPUI5 Object Page",
+        "route": "EXT-fifth",
+        "url": "http://localhost:8082/index.html",
+        "icon": "sap-icon://suitcase"
+    },
+    {
+        "title": "Sales Order Search",
+        "subheader": "OData based app",
+        "route": "EXT-sixth",
+        "url": "http://localhost:8083/index.html",
+        "icon": "sap-icon://sales-order"
+    },
+    {
+        "title": "Bar Scanning App",
+        "subheader": "Third party libraries",
+        "route": "EXT-seventh",
+        "url": "http://localhost:8084/index.html",
+        "icon": "sap-icon://bar-code"
+    },
+    {
+        "title": "Custom Captcha",
+        "subheader": "Custom Control",
+        "route": "EXT-eight",
+        "url": "http://localhost:8085/index.html",
+        "icon": "sap-icon://validate"
+    },
+    {
+        "title": "SAPUI5 Maps",
+        "subheader": "Google Maps API",
+        "route": "EXT-nine",
+        "url": "http://localhost:8086/index.html",
+        "icon": "sap-icon://map-2"
+    },
+    {
+        "title": "Weather App",
+        "subheader": "Integration cards",
+        "route": "EXT-tenth",
+        "url": "http://localhost:8087/index.html",
+        "icon": "sap-icon://heating-cooling"
+    }
+]
