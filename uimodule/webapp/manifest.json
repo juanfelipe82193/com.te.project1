@@ -75,6 +75,46 @@
           "name": "RouteMainView",
           "pattern": "RouteMainView",
           "target": ["TargetMainView"]
+        },
+        {
+          "name": "Tiles",
+          "pattern": "",
+          "target": ["Tiles"]
+        },
+        {
+          "name": "first",
+          "pattern": "first",
+          "target": [
+            "Countdown"
+          ]
+        },
+        {
+          "name": "second",
+          "pattern": "second",
+          "target": [
+            "Covid"
+          ]
+        },
+        {
+          "name": "second-list",
+          "pattern": "second-list",
+          "target": [
+            "Covid-List"
+          ]
+        },
+        {
+          "name": "second-pie",
+          "pattern": "second-pie",
+          "target": [
+            "Covid-Pie"
+          ]
+        },
+        {
+          "name": "third",
+          "pattern": "third",
+          "target": [
+            "Vacc"
+          ]
         }
       ],
       "targets": {
@@ -83,6 +123,42 @@
           "viewLevel": 1,
           "viewId": "idAppControl",
           "viewName": "MainView"
+        },
+        "Tiles": {
+          "viewType": "XML",
+          "viewName": "Tiles",
+          "viewId": "Tiles",
+          "controlId": "idAppControl"
+        },
+        "Countdown": {
+          "viewType": "XML",
+          "viewName": "countdown.Countdown",
+          "viewId": "countdown.Countdown",
+          "controlId": "idAppControl"
+        },
+        "Covid": {
+          "viewType": "XML",
+          "viewName": "covid.Covid",
+          "viewId": "covid.Covid",
+          "controlId": "idAppControl"
+        },
+        "Covid-List": {
+          "viewType": "XML",
+          "viewId": "covid.List",
+          "viewName": "covid.List",
+          "controlId": "idAppControl"
+        },
+        "Covid-Pie": {
+          "viewType": "XML",
+          "viewId": "covid.Pie",
+          "viewName": "covid.Pie",
+          "controlId": "idAppControl"
+        },
+        "Vacc": {
+          "viewType": "XML",
+          "viewId": "vacc.Vacc",
+          "viewName": "vacc.Vacc",
+          "controlId": "idAppControl"
         }
       }
     }

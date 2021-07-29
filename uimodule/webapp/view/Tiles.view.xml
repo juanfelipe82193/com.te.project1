@@ -1,0 +1,24 @@
+<mvc:View 
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:layout="sap.ui.layout"
+    controllerName="com.te.teProjects.controller.Tiles">
+    <Page id="tiles" showHeader="false">
+        <layout:VerticalLayout id="_IDGenVerticalLayout1" >
+            <layout:HorizontalLayout id="_IDGenHorizontalLayout1" allowWrapping="true" content="{tiles>/}">
+                <layout:content>
+                    <GenericTile 
+                        id="_IDGenGenericTile1" 
+                        class="sapUiSmallMarginBeginEnd sapUiSmallMarginTopBottom"
+                        header="{tiles>title}"
+                        subheader="{tiles>subheader}"
+                        press="onTilePress(${tiles>route})">
+                        <TileContent id="_IDGenTileContent1" >
+                            <ImageContent id="_IDGenImageContent1" src="{tiles>icon}"/>
+                        </TileContent>
+                    </GenericTile>
+                </layout:content>
+            </layout:HorizontalLayout>
+        </layout:VerticalLayout>
+    </Page>
+</mvc:View>

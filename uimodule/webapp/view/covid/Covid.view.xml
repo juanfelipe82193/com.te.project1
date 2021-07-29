@@ -1,0 +1,40 @@
+<mvc:View 
+	controllerName="com.te.teProjects.controller.covid.Covid"
+	xmlns="sap.m"
+    xmlns:viz="sap.viz.ui5.controls" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+    xmlns:viz.data="sap.viz.ui5.data" 
+    height="100%"
+    displayBlock="true">
+    <Page id="covid" showHeader="false">
+        <Panel 
+            id="_IDGenPanel1" 
+            class="panelStyle"
+            expanded="true"
+            headerText="Data"
+            width="auto">
+        </Panel>
+        <content>
+            <Button id="_IDGenButton1" text="Latest Count in List" press="onPressList" class="sapUiSmallMarginBeginEnd"/>
+            <Button id="_IDGenButton2" text="Latest Count by Graph" type="Accept" press="onPressGraph"/>
+            <viz:Popover id="idPopOver"></viz:Popover>
+            <viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}" height='80%' width="100%" vizType='line'>
+                <viz:dataset>
+                    <viz.data:FlattenedDataset id="_IDGenFlattenedDataset1" data="{/data}">
+                        <viz.data:dimensions>
+                            <viz.data:DimensionDefinition id="_IDGenDimensionDefinition1" name="day" value="{day}" />
+                        </viz.data:dimensions>
+                        <viz.data:measures>
+                            <viz.data:MeasureDefinition id="_IDGenMeasureDefinition1" name="total" value="{summary/total}" />
+                        </viz.data:measures>
+                    </viz.data:FlattenedDataset>
+                </viz:dataset>
+                <viz:feeds>
+                    <viz.feeds:FeedItem id='valueAxisFeed' uid="valueAxis" type="Measure" values="total" />
+                    <viz.feeds:FeedItem id='categoryAxisFeed' uid="categoryAxis" type="Dimension" values="day" />
+                </viz:feeds>
+            </viz:VizFrame>
+        </content>
+    </Page>
+</mvc:View>
